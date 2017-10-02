@@ -95,14 +95,14 @@ iptables-restore < /etc/iptables.up.rules
 service openvpn restart
 iptables -t nat -I POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
 iptables-save > /etc/iptables_yg_baru_dibikin.conf
-wget -O /etc/network/if-up.d/iptables "https://raw.githubusercontent.com/jhelson15/masterjhels/master/iptables"
+wget -O /etc/network/if-up.d/iptables "https://raw.githubusercontent.com/roymark/openvpn/master/iptables"
 chmod +x /etc/network/if-up.d/iptables
 service openvpn restart
 
 
 # configure openvpn client config
 cd /etc/openvpn/
-wget -O /etc/openvpn/client-1194.ovpn "https://raw.githubusercontent.com/jhelson15/masterjhels/master/client-1194.conf"
+wget -O /etc/openvpn/client-1194.ovpn "https://raw.githubusercontent.com/roymark/openvpn/master/client-1194.conf"
 sed -i $MYIP2 /etc/openvpn/client-1194.ovpn;
 sed -i 's/proto tcp/proto udp/g' /etc/openvpn/client-1194.ovpn
 sed -i 's/1194/6500/g' /etc/openvpn/client-1194.ovpn
@@ -148,7 +148,7 @@ service fail2ban restart
 
 # install squid3
 apt-get -y install squid3
-wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/jhelson15/re-construction/master/conf/squid.conf"
+wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/roymark/openvpn/master/squid.conf"
 sed -i $MYIP2 /etc/squid3/squid.conf;
 service squid3 restart
 
