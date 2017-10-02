@@ -2,7 +2,7 @@ apt-get install ca-certificates
 
 
 
-https://raw.githubusercontent.com/roymark/openvpn/master/Debian-kvm.sh
+wget https://raw.githubusercontent.com/roymark/openvpn/master/Debian-kvm.sh
 
 
 
