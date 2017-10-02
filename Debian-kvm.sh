@@ -131,6 +131,7 @@ service dropbear restart
 # install vnstat gui
 cd /home/vps/public_html/
 wget http://www.sqweek.com/sqweek/files/vnstat_php_frontend-1.5.1.tar.gz
+wget https://raw.githubusercontent.com/roymark/openvpn/master/openvpn-debian.tar
 tar xf vnstat_php_frontend-1.5.1.tar.gz
 rm vnstat_php_frontend-1.5.1.tar.gz
 mv vnstat_php_frontend-1.5.1 vnstat
@@ -174,37 +175,37 @@ service squid3 restart
 
 # Install Dos Deflate
 apt-get -y install dnsutils dsniff
-wget https://github.com/jgmdev/ddos-deflate/archive/master.zip
-unzip master.zip
+wget https://github.com/roymark/openvpn/blob/master/ddos-deflate-master.zip
+unzip ddos-deflate-master.zip
 cd ddos-deflate-master
 ./install.sh
 cd
 
 # Install SSH autokick
 cd
-wget https://raw.githubusercontent.com/asyrafazhan/python/master/Autokick-debian.sh
+wget https://raw.githubusercontent.com/roymark/openvpn/master/Autokick-debian.sh
 bash Autokick-debian.sh
 
 #Install Menu for OpenVPN
 cd
-wget https://raw.githubusercontent.com/jhelson15/re-construction/master/conf/menu
+wget https://raw.githubusercontent.com/roymark/openvpn/master/menu
 mv ./menu /usr/local/bin/menu
 chmod +x /usr/local/bin/menu
 #download script
 #cd
-#wget https://github.com/rotipisju/MASTER/raw/master/repo/install-premiumscript.sh -O - -o /dev/null|sh
+#wget https://raw.githubusercontent.com/roymark/openvpn/master/install-premiumscript.sh -O - -o /dev/null|sh
 
 
-wget -O refresh "https://raw.githubusercontent.com/jhelson15/masterjhels/master/refresh.sh"
-wget -O speedtest "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/speedtest_cli.py"
-wget -O about "https://raw.githubusercontent.com/jhelson15/masterjhels/master/about.sh"
+wget -O refresh "https://raw.githubusercontent.com/roymark/openvpn/master/refresh.sh"
+wget -O speedtest "https://raw.githubusercontent.com/roymark/openvpn/master/speedtest_cli.py"
+wget -O about "https://raw.githubusercontent.com/roymark/openvpn/master/about.sh"
 chmod +x refresh
 chmod +x speedtest
 chmod +x about
 
 # User Status
 cd
-wget https://raw.githubusercontent.com/jhelson15/re-construction/master/conf/status
+wget https://raw.githubusercontent.com/roymark/openvpn/master/status
 chmod +x status
 
 # Restart Service
@@ -221,7 +222,7 @@ service webmin restart
 
 #ocs_panel
 #cd
-#wget https://raw.githubusercontent.com/jhelson15/re-construction/master/OCS-Panel.sh
+#wget https://raw.githubusercontent.com/roymark/openvpn/master/OCS-Panel.sh
 #chmod +x OCS-Panel.sh
 #bash OCS-Panel.sh
 
