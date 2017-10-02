@@ -17,7 +17,7 @@ echo -e "Password: $Pass"
 echo -e "-------------------------------"
 echo -e "Expired Date: $exp"
 echo -e "==============================="
-echo -e "Mod by jhelson15"
+echo -e "Mod by Roy Mark"
 echo -e "Type (menu) to back menu option."
 echo -e ""
 	}
