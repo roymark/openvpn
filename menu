@@ -178,7 +178,7 @@ echo "------------------------------------------------"
 
 echo "";
 echo -e "Type [menu] to back MENU OPTION."
-echo "Mod by jhelson15";
+echo "Mod by Roy Mark Gutierrez";
 
 }
 function delete_user(){
@@ -310,9 +310,9 @@ sleep 0.5
 echo "Connecting..."
 sleep 0.5
 screenfetch
-echo "[--------------------oOo(^_~)oOo--------------------]"
-echo "[----------Welcom Jelson Barrozo Autoscript --------]"
-echo "[---------------Contact: 09565125437 ---------------]"
+echo "[--------------------Roboratz--------------------]"
+echo "[----------Welcome to Roy Mark Gutierrez Autoscript --------]"
+echo "[---------------Contact: 09364915304 ---------------]"
 echo "[Menu]"
 PS3='Please enter number your choice [1-23]: '
 options=("Shadowsock How to?"	
